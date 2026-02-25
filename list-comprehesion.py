@@ -16,12 +16,14 @@ lista = ['Monitor', 'Mesa', 'De', 'Escritório', 'Porta']
 ordem = sorted(lista, key=lambda palavra: sum(1 for letra in palavra.lower() if letra in 'aeiou'))
 print(ordem)
 
-
 # Dada uma lista de palavras, ordene-a pelo último caractere de cada palavra.
+lista = ['Garrafa', 'PeneirA', 'Python']
+ultimo = sorted(lista, key=lambda palavra: palavra[-1].lower())
+print(ultimo)
 
-
-# Dada uma string, utilize list comprehension para criar uma nova string onde os caracteres aparecem alternando entre maiúsculas e  minúsculas.
-
+# Dada uma string, utilize list comprehension para criar uma nova string onde os caracteres aparecem alternando entre maiúsculas e minúsculas.
+palavra = 'string'
+print([x for x in palavra.upper()])
 
 # Dada uma lista de strings contendo números misturados com letras (por exemplo, "a3b", "z12y", "c1x"), ordene a lista com base no número contido na string.
 
