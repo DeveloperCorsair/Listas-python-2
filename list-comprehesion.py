@@ -23,10 +23,13 @@ print(ultimo)
 
 # Dada uma string, utilize list comprehension para criar uma nova string onde os caracteres aparecem alternando entre maiúsculas e minúsculas.
 palavra = 'string'
-print([x for x in palavra.upper()])
+#print([indice for indice, letra in enumerate(palavra) letra.upper() if indice % 2 == 0 else letra.lower()])
+print(''.join([letra.upper() if i % 2 == 0 else letra.lower() for i, letra in enumerate(palavra)]))
 
 # Dada uma lista de strings contendo números misturados com letras (por exemplo, "a3b", "z12y", "c1x"), ordene a lista com base no número contido na string.
-
+lista = ["a3b", "z12y", "c1x"]
+numero = sorted(lista, key=lambda palavra: int(''.join([letra for letra in palavra if letra.isdigit()])))
+print(numero)
 
 # Crie um dicionário que mapeia os números de 1 a 10 para seus respectivos quadrados, usando dict comprehension.
 
