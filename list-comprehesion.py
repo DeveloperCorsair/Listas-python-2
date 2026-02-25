@@ -1,0 +1,57 @@
+# Seja uma lista de inteiros, mostre apenas os números pares usando list comprehension.
+inteiros = [x for x in range(1, 20) if x % 2 == 0]
+print(inteiros)
+
+# Crie uma lista com os quadrados de todos os números pares de 1 a 20 usando list comprehension.
+quadrado = [i**2 for i in range(1, 20) if i % 2 == 0]
+print(quadrado)
+
+# Dada uma lista de palavras, ordene-a pelo tamanho das palavras em ordem crescente, utilizando sorted() com a cláusula key=.
+lista = ['computador', 'celular', 'tablet']
+crescente = sorted(lista, key=len)
+print(crescente)
+
+# Dada uma lista de palavras, ordene-a pelo número de vogais presentes em cada palavra.
+lista = ['Monitor', 'Mesa', 'De', 'Escritório', 'Porta']
+ordem = sorted(lista, key=lambda palavra: sum(1 for letra in palavra.lower() if letra in 'aeiou'))
+print(ordem)
+
+
+# Dada uma lista de palavras, ordene-a pelo último caractere de cada palavra.
+
+
+# Dada uma string, utilize list comprehension para criar uma nova string onde os caracteres aparecem alternando entre maiúsculas e  minúsculas.
+
+
+# Dada uma lista de strings contendo números misturados com letras (por exemplo, "a3b", "z12y", "c1x"), ordene a lista com base no número contido na string.
+
+
+# Crie um dicionário que mapeia os números de 1 a 10 para seus respectivos quadrados, usando dict comprehension.
+
+
+# Dada uma string, crie um dicionário onde as chaves são os caracteres e os valores são a contagem de vezes que cada caractere aparece.
+
+
+# Dado um dicionário qualquer, crie um novo dicionário onde as chaves e os valores estejam invertidos.
+
+
+# Dado um dicionário de números, crie um novo dicionário contendo apenas os pares chave-valor onde o valor seja maior que um determinado número.
+
+
+# Dado um dicionário, ordene-o pelos valores.
+
+
+# Dado um dicionário onde as chaves são palavras, ordene-o com base no comprimento das chaves.
+
+
+# Dada uma frase, crie um dicionário onde as chaves são palavras e os valores são a contagem de vezes que cada palavra aparece.
+
+
+# Dado um dicionário onde os valores são números, crie um novo dicionário onde cada valor seja a raiz quadrada do original.
+
+
+""" Dada uma lista de palavras, crie um dicionário onde as chaves sejam as primeiras letras e os valores sejam listas das palavras correspondentes.
+lista = 'cax abe b13 c23 arr d12'.split()
+saída:
+{'a': ['abe', 'arr'], 'b':['b13'], 'c':['cax', 'c23'],
+ 'd': ['d12']} """
