@@ -32,10 +32,11 @@ numero = sorted(lista, key=lambda palavra: int(''.join([letra for letra in palav
 print(numero)
 
 # Crie um dicionário que mapeia os números de 1 a 10 para seus respectivos quadrados, usando dict comprehension.
-
+print({numero: numero **2 for numero in range(1, 11)})
 
 # Dada uma string, crie um dicionário onde as chaves são os caracteres e os valores são a contagem de vezes que cada caractere aparece.
-
+palavra = 'computador'
+print({letra: palavra.count(letra) for letra in palavra})
 
 # Dado um dicionário qualquer, crie um novo dicionário onde as chaves e os valores estejam invertidos.
 
