@@ -23,7 +23,6 @@ print(ultimo)
 
 # Dada uma string, utilize list comprehension para criar uma nova string onde os caracteres aparecem alternando entre maiúsculas e minúsculas.
 palavra = 'string'
-#print([indice for indice, letra in enumerate(palavra) letra.upper() if indice % 2 == 0 else letra.lower()])
 print(''.join([letra.upper() if i % 2 == 0 else letra.lower() for i, letra in enumerate(palavra)]))
 
 # Dada uma lista de strings contendo números misturados com letras (por exemplo, "a3b", "z12y", "c1x"), ordene a lista com base no número contido na string.
@@ -32,14 +31,23 @@ numero = sorted(lista, key=lambda palavra: int(''.join([letra for letra in palav
 print(numero)
 
 # Crie um dicionário que mapeia os números de 1 a 10 para seus respectivos quadrados, usando dict comprehension.
-print({numero: numero **2 for numero in range(1, 11)})
+print({numero: numero**2 for numero in range(1, 11)})
 
 # Dada uma string, crie um dicionário onde as chaves são os caracteres e os valores são a contagem de vezes que cada caractere aparece.
 palavra = 'computador'
 print({letra: palavra.count(letra) for letra in palavra})
 
 # Dado um dicionário qualquer, crie um novo dicionário onde as chaves e os valores estejam invertidos.
-
+def novo (n):
+    # Dict comprehension
+    return {valor: chave for chave, valor in n.items()}
+    
+    # Método de gente normal
+    """ novo_dict = {}
+    for chave, valor in n.items():
+        novo_dict[valor] = chave
+    return novo_dict """
+print(novo({'camisa': 'calça'})) 
 
 # Dado um dicionário de números, crie um novo dicionário contendo apenas os pares chave-valor onde o valor seja maior que um determinado número.
 
